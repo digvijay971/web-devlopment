@@ -1,4 +1,13 @@
-h2 {
-    color: goldenrod;
-    text-align: center;
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:black;
+    color: aliceblue;
+}
+h1{
+    font-family:serif;
+    color: blueviolet;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: chocolate;
 }
