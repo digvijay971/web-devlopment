@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hthjrhljtjhhtghyt</title>
+    </head>
+    <body>
+        <p id="tata"></p>
+        <script>
+            class car {
+                constructor(brand){
+                    this.carname=brand;
+                }
+                present() {
+                    return " i have " + this.carname;
+                }
+            }
+            class model extends car {
+                constructor(brand,model){
+                    super(brand)
+                    this.model=model
+                }
+                show() {
+                    return this.present() , "it is a " + this.model;
+                }
+            }
+            let mycar = new model ("tata","tiger")
+            document.getElementById("tata").innerHTML = mycar.show();
+        </script>
+    </body>
+</html>

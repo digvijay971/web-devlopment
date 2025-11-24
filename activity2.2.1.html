@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>gbfjbksbnjkfhbnskw</title>
+    </head>
+    <body>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+        class student{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age() {
+                let date=new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+        student1 = new student("digvijay", 2024);
+            document.getElementById("student1").innerHTML = student1.name + " i am" + student1.age();
+             student2 = new student("kitu", 2028);
+                document.getElementById("student2").innerHTML = student2.name + " i am" + student2.age();
+        </script>
+    </body>
+</html>
