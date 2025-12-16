@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form id="haha">
+            <input id="blabla" type="text">
+            <button>add now or get trolled</button>
+        </form>
+        <h1> THE BLA BLA LIST</h1>
+        <ul id="lol"></ul>
+        <script>
+            var a= document.getElementById("haha");
+            var b = document.getElementById("blabla");
+            var x = document.getElementById("lol");
+            a.addEventListener("submit",
+                function createItem(abc) {
+                    event.preventDefault()
+                    createItem(b.value)
+                }
+            )
+            function createItem(abc) {
+                var y= `<li>${abc}<button onclick="deleteElement(this)">Delete</button> </li>`
+                x.insertAdjacentHTML("beforeend",item)
+                b.value = ""
+                b.focus()
+            }
+            function deleteElement(ElementToDelete) {
+                ElementToDelete.parentelement.remove()
+            }
+        </script>
+    </body>
+</html>
