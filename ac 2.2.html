@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="haha"></p>
+        <p id="lol"></p>
+        <script>
+        class Student {
+        constructor(name) {
+        this.studentName = name;
+        }
+        static hello(){
+        return "Hello";
+        }
+        present() {
+        return 'My name is' + this.studentName;
+        }
+        }
+        class Grade extends Student {
+                constructor(name, grade) {
+                    super(name);
+                    this.studentGrade = grade;
+                }
+                show() {
+                    return this.present() +' ,from '
+                     + this.studentGrade;
+                    }
+            }
+            let myStudent = new Grade("DIGVIJAY THE GREAT", "GRADE 250");
+                document.getElementById("lol").innerHTML = myStudent.show();
+                document.getElementById("haha").innerHTML =
+                        Student.hello();
+                        </script>
+    </body>
+</html>
