@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="carousel-container">
+        <img class="lol" src="digvijaythegod.gif" height="300" width="300" alt="lol">
+        <img class="lol" src="sasuke.gif" height="300" width="300" alt="lol1">
+        <img class="lol" src="56655bda3afc62cb70c9c4c00b5d3834.gif" height="300" width="300" alt="lol2">
+        </div>
+        <script>
+            var haha= 0
+            function carousel() {
+                var a;
+                var x = document.getElementsByClassName("lol");
+                for (a= 0;a < x.length; a++) {
+                    x[a].style.display = "none"
+                }
+                haha++
+                if (haha > x.length) {
+                    haha= 1;
+                }
+                x[haha].style.display = "block";
+                setTimeout(carousel, 2000);
+            }
+            carousel()
+            </script>
+    </body>
+</html>
